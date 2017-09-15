@@ -5,10 +5,10 @@ module Single {
         constructor(public radius) { }
     }
 
-    class Square {
-        type = 'Square';
+    class Reactangle {
+        type = 'Reactangle';
 
-        constructor(public length) { }
+        constructor(public length, public width) { }
     }
 
     class AreaCalculator {
@@ -16,10 +16,10 @@ module Single {
             let sum = 0;
             for (let shape of shapes) {
                 if (shape.type == 'Circle') {
-                    let area = shape.length * shape.length;
+                    let area = shape.width * shape.length;
                     sum += area;
                 }
-                else if (shape.type == 'Square') {
+                else if (shape.type == 'Reactangle') {
                     let area = shape.radius * 2 * 3.14;
                     sum += area;
                 }
@@ -31,8 +31,8 @@ module Single {
 
     let shapes = [
         new Circle(5),
-        new Square(4),
-        new Square(2)
+        new Reactangle(2, 4),
+        new Reactangle(3, 3)
     ]
 
     let calculator = new AreaCalculator();

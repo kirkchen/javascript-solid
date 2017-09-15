@@ -1,4 +1,4 @@
-module OpenClose {
+module Liskov {
     class Circle {
         type = 'Circle';
 
@@ -23,6 +23,14 @@ module OpenClose {
         }
     }
 
+    class Square extends Reactangle {
+        type = "Square";
+
+        constructor(public length) {
+            super(length, length);
+        }
+    }
+
     class AreaCalculator {
         Calculate(shapes) {
             let sum = 0;
@@ -32,8 +40,6 @@ module OpenClose {
                 sum += area;
             }
 
-            // let sum = shapes.reduce((s, v) => s += v.area(), 0)
-
             return sum;
         }
     }
@@ -41,7 +47,7 @@ module OpenClose {
     let shapes = [
         new Circle(5),
         new Reactangle(2, 4),
-        new Reactangle(3, 3)
+        new Square(3)
     ]
 
     let calculator = new AreaCalculator();

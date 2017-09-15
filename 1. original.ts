@@ -5,17 +5,19 @@ module Original {
                 radius: 5
             },
             {
-                length: 2
+                length: 2,
+                width: 4
             },
             {
-                radius: 4
+                length: 3,
+                width: 3
             },
         ]
 
         let sum = 0;
         for (let shape of shapes) {
             if (shape.length) {
-                let area = shape.length * shape.length;
+                let area = shape.width * shape.length;
                 sum += area;
             }
             else if (shape.radius) {
