@@ -1,0 +1,11 @@
+{
+  "name": "javascript-solid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "KirkChen <kirkchen@kkbox.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2"
+  }
+}
