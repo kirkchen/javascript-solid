@@ -16,11 +16,11 @@ module Single {
             let sum = 0;
             for (let shape of shapes) {
                 if (shape.type == 'Circle') {
-                    let area = shape.width * shape.length;
+                    let area = shape.radius * shape.radius * 3.14;
                     sum += area;
                 }
                 else if (shape.type == 'Reactangle') {
-                    let area = shape.radius * 2 * 3.14;
+                    let area = shape.width * shape.length;
                     sum += area;
                 }
             }

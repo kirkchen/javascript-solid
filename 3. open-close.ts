@@ -5,7 +5,7 @@ module OpenClose {
         constructor(public radius) { }
 
         area() {
-            let area = this.radius * 2 * 3.14;
+            let area = this.radius * this.radius * 3.14;
 
             return area;
         }

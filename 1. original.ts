@@ -21,7 +21,7 @@ module Original {
                 sum += area;
             }
             else if (shape.radius) {
-                let area = shape.radius * 2 * 3.14;
+                let area = shape.radius * shape.radius * 3.14;
                 sum += area;
             }
         }
